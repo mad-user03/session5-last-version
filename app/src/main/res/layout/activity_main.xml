@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_browse_fragment"
+    android:layout_width="1080dp"
+    android:layout_height="720dp"
+    tools:context=".MainActivity"
+    android:background="#332973"
+    tools:deviceIds="tv"
+    tools:ignore="MergeRootFrame" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="334dp"
+            android:layout_height="172dp"
+            android:layout_marginLeft="322dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logocinema" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="438dp"
+            android:layout_height="51dp"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="290dp"
+            android:background="@drawable/backinput"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="436dp"
+            android:layout_height="51dp"
+            android:layout_below="@id/imageView"
+
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="123dp"
+            android:layout_marginRight="290dp"
+            android:background="@drawable/backinput"
+            android:ems="10"
+            android:hint="Пароль"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="436dp"
+            android:layout_height="51dp"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="290dp"
+            android:background="@drawable/buttonbackground"
+            android:onClick="butStartMainScreen"
+            android:text="Войти" />
+    </RelativeLayout>
+</FrameLayout>
